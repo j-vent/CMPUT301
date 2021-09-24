@@ -101,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
     public void setVisibilityAddCityComponents(boolean isVisible){
         int visibilityCode = (isVisible) ? View.VISIBLE : View.INVISIBLE;
         EditText cityText = (EditText) findViewById(R.id.city_editText);
+        cityText.getText().clear();
         cityText.setVisibility(visibilityCode);
         Button confirmBtn = (Button) findViewById(R.id.confirmBtn);
         confirmBtn.setVisibility(visibilityCode);
